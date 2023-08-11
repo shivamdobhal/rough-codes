@@ -1,0 +1,92 @@
+home.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute to Atal Jii</title>
+    <link  rel="stylesheet" href="style.css">
+</head>
+<body>           
+    <div class="head">
+     <h1>Atal Bihari Vajpayee</h1>
+     </div>
+   
+     <div >
+         <img class="image1" src="atal jii photo head.jpeg" alt="img not loading">
+    </div>
+
+    <div class="about">
+        <h1 style="text-decoration: underline ; color:rgba(242, 29, 17, 0.928)">About The Legend :</h1>
+        <div class="aboutinside">
+              <p>↠Atal Bihari Vajpayee was born on 25 December 1924 in Gwalior's Shinde's cantonment in the state of Madhya Pradesh, India.His father's name  was Shri Krishna Bihari Vajpayee</p>
+              <p>and mother's name was Krishna Devi.His early education took place in Gwalior. He graduated from Victoria College and did his MA in Political Science from DAV College , Kanpur.</p>   
+              <p>Atal Bihari Vajpayee achieved a unique and commendable position while in politics. He has been the most admired Prime Minister of the country on behalf of the  Bharatiya Janata</p>
+              <p>Party.He was One of the Bharat Janata Party’s(BJP) co-founders and a prominent figure.He belonged to the Rashtriya Swayamsevak Sangh, a group of volunteers with Hindu  nationalist.</p>         
+              <p>views.He was the first Indian prime minister to hold office for the whole duration who was not a member of the Indian National Congress. He was also a well-known writer and poet.</p>
+              <p>As India’s 10th prime minister, Atal Bihari Vajpayee was an Indian politician and diplomat who held office for three terms: for 13 days in 1996, for 13 months from 1998 to 1999,</p>
+              <p>and then for a full term from 1999 to 2004.  </p>
+                
+       
+        </div>
+    </div>
+       
+       <div >
+        <marquee scrollamount=10>      
+          <img style="height:18.5%; width:18.5%" src="quote 3.jpg" > 
+          <img style="height:40%; width:40%" src="quote 4.webp">
+          <img style="height:40%; width:40%" src="quote5.jpeg">
+          <img style="height:50%; width:50%" src="atal jii quote 1.jpg" > 
+          <img style="height:50%; width:50%" src="atal jii quote2.jpg" > 
+        </marquee>
+        </div>
+    <div class="tribute">
+     <h1 style="text-decoration: underline ; color:rgba(242, 29, 17, 0.928)"> Some Glimpse About His Greatness</h1>
+     <div class="insidetribute">
+
+     </div>
+    </div>
+</body>
+</html>
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////css////////////////////////////////////////////////////////
+body{
+    background-color: black;
+}
+
+.head{
+    color: rgb(218, 238, 242);
+    text-align:center;
+    text-decoration:overline;
+    font-size: xx-large;
+    text-shadow: 5px 5px 6px rgb(53, 185, 183);
+   
+}
+
+.image1{
+   border-radius: 5px;
+   height: 35%;
+   width:35%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   border:5px solid rgb(31, 36, 36);
+
+}
+.about{
+    color:aliceblue;
+    font-size: larger;
+    border:5px solid rgba(247, 241, 241, 0.525);
+    background-color: rgb(43, 44, 44);
+}
+
+.aboutinside{
+    border:5px solid rgb(231, 101, 101);
+    margin:50px;
+    font-size:18px;
+    text-align:center;
+    background-color: antiquewhite;
+    color: rgb(10, 10, 10);
+    font-family: cursive; 
+}
