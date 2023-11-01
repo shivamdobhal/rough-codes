@@ -1,0 +1,336 @@
+resume code
+--------------------
+\documentclass[a4paper,8pt]{article}
+
+\usepackage{parskip} 
+\usepackage{hologo}
+\usepackage{fontspec}
+\usepackage{fontawesome5}
+
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9, top=.4in, bottom=.4in]{geometry}
+
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.42\textwidth}
+
+%custom \section
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{1pt}{2pt}{2pt}
+
+%for publications
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\color[HTML]{110223}%{1C033C}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+%for social icons
+\usepackage{fontawesome5}
+% \usepackage{times}
+
+% For underline
+\usepackage[normalem]{ulem}
+
+\setmainfont{Arial}  % Set it to whatever you like
+
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty} 
+
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\color[HTML]{1C033C} \Huge{Shivam Dobhal} \\[6pt]
+\\
+\textcolor[HTML]{371e77}{\href{tel:+(91 9557137023)}{\raisebox{-0.05\height}{\faIcon{phone-square-alt}} +91 9557137023 }} $|$
+\textcolor[HTML]{371e77}{\underline{\href{mailto:shivamdobhal11@gmail.com}{\raisebox{-0.05\height}{\faEnvelope} shivamdobhal11@gmail.com}} $|$}
+
+\textcolor[HTML]{371e77}{\underline{\href{https://github.com/shivamdobhal}{\raisebox{-0.05\height}{\faGithub} Github}} $|$}
+\textcolor[HTML]{371e77}{\underline{\href{https://www.linkedin.com/in/shivam-dobhal-a95571sd/}{\raisebox{-0.05\height}{\faLinkedin} Linkedin}} $|$}
+\textcolor[HTML]{371e77}{\underline{\href{https://leetcode.com/Shivam_dobhal/}{\raisebox{-0.05\height}{\faIcon{link} } LeetCode}}}
+\end{tabularx}
+
+
+
+
+
+
+
+
+
+
+% Education
+\section{Education}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{Graphic Era Hill University( Dehradun)} & \hfill \color[HTML]{371e77} 2020-2024 \\
+\color[HTML]{371e77} B.Tech in Computer Science and Engineering $|$ {\uline{\href{https://linktoyourcarrer.site}{Link to all courses}}} & \hfill \color[HTML]{4B28A4} \textit{\textbf{GPA: X/100}} \\
+% \multicolumn{2}{@{}X@{}}{Relevant Courses: Web Software Construction (JavaScript), Maths and Data Science (Python), OOP (C++), \newline \hspace*{16ex} Security in Software Systems (Swift \& Python), Algorithms and Data Structures I and II (C++)}
+\end{tabularx}
+
+
+
+\section{Skills}
+\color[HTML]{1C033C}\textbf{Core:} \\[2pt]
+\color[HTML]{371e77} \hspace*{4ex}Data Structures and Algorithms, Object Oriented Programming, Database Management Systems, Cyber Security, \hspace*{4ex}Operating System Fundamentals.\\[3pt]
+\color[HTML]{1C033C}\textbf{Languages:} \\[2pt]
+\color[HTML]{371e77} \hspace*{4ex}  Python (Basic), C++ (Proficient), C (Proficient), HTML, CSS, MySQL , Java, JavaScript\\[3pt]
+\color[HTML]{1C033C}\textbf{Operating System:} \\[2pt]
+\color[HTML]{371e77} \hspace*{4ex} Windows, Linux, Mac\\[3pt]
+\color[HTML]{1C033C}\textbf{Developer Tools:} \\[2pt]
+\color[HTML]{371e77} \hspace*{4ex} Oracle Database, Microsoft Office , GitHub, XAMPP,Visual Studio Code\\[3pt]
+\color[HTML]{1C033C}\textbf{Technologies \& Tools:} \\[2pt]
+\color[HTML]{371e77} \hspace*{4ex} ReactJS,MongoDB,Linux.\\[3pt]
+
+
+
+
+% Projects
+\section{Projects}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{\uline{Desktop Chat Application}} 
+                                               
+ $|$                                        {\href{https://github.com/}{\raisebox{-0.05\height}{\faGithub} 
+      Github}} \hfill \color[HTML]{371e77} July 2021  \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Frontend Web Development}} \hfill \color[HTML]{4B28A4} \textit{Socket IO, JavaScript, HTML, CSS} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item An two-way chat application like whatsapp.
+    \end{itemize}
+    \end{minipage}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{\uline{Disease Prediction System Based On Symptoms}}                                     
+                                               
+ $|$                                              
+               {\href{https://github.com/}{\raisebox{-0.05\height}{\faGithub} 
+      Github}} \hfill \color[HTML]{371e77} Sep. 2022 \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Machine Learning}} \hfill \color[HTML]{4B28A4} \textit{Python, JavaScript, HTML, Git} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item An website which can predict the diseases when the number of 
+input symptoms are given to it as input.
+\item Algorithm used is Naive Bayes Algorithm.
+    \end{itemize}
+    \end{minipage}
+\end{tabularx}
+
+
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{\uline{ TO-DO List}} 
+                                               
+                                               
+     $|$                                          
+                {\href{https://github.com/}{\raisebox{-0.05\height}{\faGithub} 
+      Github}} \hfill \color[HTML]{371e77} March 2023 \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Frontend Web Development}} \hfill \color[HTML]{4B28A4} \textit{JavaScript, HTML,CSS, GitHub} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Todo list contains list of tasks which you need to complete or things that you want 
+to do and also gives an idea that what tasks have been completed till now, usually organized in order of priority. 
+    \end{itemize}
+    \end{minipage}
+\end{tabularx}
+
+
+
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{\uline{Credit Card Fraud Detection 
+          }}
+          
+          
+          
+          $|$     
+          
+          
+          
+          {\href{https://github.com/}{\raisebox{-0.05\height}{\faGithub} 
+      Github}} \hfill \color[HTML]{371e77}  Aug . 2023 \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Machine Learning}} \hfill \color[HTML]{4B28A4} \textit{Python} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item This model is used to detect the anomaly and classify it as a fraudulent transaction or valid transaction as quickly as possible. 
+    \end{itemize}
+    \end{minipage}
+\end{tabularx}
+
+
+
+
+
+
+
+
+
+
+
+\section{Certifications}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf {\uline{Ethical hacking From Scratch}}                                               $|$          {\href{https://github.com/}{\raisebox{-0.05\height}{\faIcon{link}} 
+      Link}} \hfill \color[HTML]{371e77} July 2020  \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Frontend Web Development}} \hfill \color[HTML]{4B28A4} \textit{Socket IO, JavaScript, HTML, CSS} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item An two-way chat application like whatsapp.
+    \end{itemize}
+    \end{minipage}
+\end{tabularx}
+
+
+
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf {\uline{Full stack Web Development}}                                               $|$          {\href{https://github.com/}{\raisebox{-0.05\height}{\faIcon{link}} 
+      Link}} \hfill \color[HTML]{371e77} July 2020  \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Frontend Web Development}} \hfill \color[HTML]{4B28A4} \textit{Socket IO, JavaScript, HTML, CSS} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item An two-way chat application like whatsapp.
+    \end{itemize}
+    \end{minipage}
+\end{tabularx}
+
+
+
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf {\uline{ Introduction to Python programming}}                                               $|$          {\href{https://github.com/}{\raisebox{-0.05\height}{\faIcon{link}} 
+      Link}} \hfill \color[HTML]{371e77} July 2020  \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Frontend Web Development}} \hfill \color[HTML]{4B28A4} \textit{Socket IO, JavaScript, HTML, CSS} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item An two-way chat application like whatsapp.
+    \end{itemize}
+    \end{minipage}
+\end{tabularx}
+
+
+
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf {\uline{ Introduction to Machine Learning}}                                               $|$          {\href{https://github.com/}{\raisebox{-0.05\height}{\faIcon{link}} 
+      Link}} \hfill \color[HTML]{371e77} July 2020  \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Frontend Web Development}} \hfill \color[HTML]{4B28A4} \textit{Socket IO, JavaScript, HTML, CSS} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item An two-way chat application like whatsapp.
+    \end{itemize}
+    \end{minipage}
+\end{tabularx}
+
+
+
+
+
+
+
+
+
+
+
+%SCHOLARSTIC ACHIEVEMENTS
+\section{SCHOLARSTIC ACHIEVEMENTS}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item 3 Star Coder At LeetCode(solved more than 450 DSA Problems).
+        \item Scored 85 percentile in JEE(Main) 2020 
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+
+
+
+% %Experience
+% \section{Experience}
+% \begin{tabularx}{\linewidth}{ @{}l r@{} }
+% \textbf{\uline{\href{https://github.com/}{Meta \& Major League Hacking}}} \hfill \color[HTML]{371e77} Oct. 2023 - Present \\[4pt]
+% \color[HTML]{371e77}\textbf{\textit{Software Engineer Fellow}}\ \hfill \color[HTML]{4B28A4} \textit{Python, Flask, Git, GitHub} \\[5pt]
+% \begin{minipage}[t]{\linewidth}
+%     \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+%         \item Contributing to Meta's AudioCraft, a Generative AI project focused on processing, generation, and autocompletion.
+%         \item Creating a Python command-line interface extension with text and audio input validation, to facilitate high-fidelity audio generation for sounds and music.
+%     \end{itemize}
+% \end{minipage}
+% \end{tabularx}
+
+
+
+
+
+
+
+% \begin{tabularx}{\linewidth}{ @{}l r@{} }
+% \color[HTML]{1C033C} \textbf{\uline{\href{https://github.com/}{Meta \& Major League Hacking}}} \hfill \color[HTML]{371e77} Jun. 2023 - Sep. 2023 \\[4pt]
+% \color[HTML]{371e77}\textbf{\textit{Site Reliability Engineer Fellow}}\ \hfill \color[HTML]{4B28A4} \textit{Python, Bash, MySQL, Flask, HTML, Git, GitHub, Docker, Linux} \\[5pt]
+% \begin{minipage}[t]{\linewidth}
+%     \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+%         \item Developed a website on Flask with Jinja, MySQL and a professional Git/GitHub workflow.
+%         \item Automated CI/CD pipelines for unit and integration testing, as well as the deployment the web app, database and Nginx using Docker Compose, GitHub Actions and scripting.
+%     \end{itemize}
+% \end{minipage}
+% \end{tabularx}
+
+% \begin{tabularx}{\linewidth}{ @{}l r@{} }
+% \color[HTML]{1C033C} \textbf{Universal Scientific Industrial Co., Ltd.} \hfill \color[HTML]{371e77} Mar. 2023 - Jun. 2023 \\[4pt]
+% \color[HTML]{371e77}\textbf{\textit{Software Engineering Intern}} \hfill \color[HTML]{4B28A4} \textit{PHP, JavaScript, SQL Server, HTML, CSS, Bootstrap, jQuery} \\[5pt]
+% \begin{minipage}[t]{\linewidth}
+%     \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+%         \item Handled overtime requests and approvals for 2,000+ employees by developing internal back-end systems with PHP.
+%         \item Displayed graphs and logs in web interfaces of 6,000+ monthly requests using HTML, JavaScript, and Bootstrap.
+%         \item Reduced reports loading times from 10 to 3 seconds, enhancing SQL queries by up to 60\%.
+%     \end{itemize}
+%     \end{minipage}
+% \end{tabularx}
+
+% % Leadership and Volunteering
+% \section{Leadership and Volunteering}
+% \begin{tabularx}{\linewidth}{ @{}l r@{} }
+% \color[HTML]{1C033C} \textbf{Club de Algoritmia GDA} \hfill \color[HTML]{371e77} Jun. 2023 - Ongoing \\[5pt]
+% \color[HTML]{371e77}\textbf{\textit{Board of Directors}} \\[5pt]
+% \begin{minipage}[t]{\linewidth}
+%     \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+%         \item Guiding a community of 550+ CS students in their professional development, technical skills and interest in tech.
+%         \item Orchestrating workshops, coding sessions, and events to enhance skills and encourage continuous learning.
+%     \end{itemize}
+% \end{minipage}
+% \end{tabularx}
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
